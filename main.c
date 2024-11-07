@@ -9,7 +9,7 @@
 // Entry
 int main(int argc, char *argv[]) {
     printf("XBLConfigParser Version %s\n", PARSER_VERSION);
-    printf("Copyright (c) 2024-2025 \n\n");
+    printf("Copyright (c) 2024-2025 woa-msmnile authors\n\n");
 
     // Check args
     if (argc != 3) {
@@ -40,7 +40,7 @@ int main(int argc, char *argv[]) {
 
     // Print ELF header info
     printf("ELF Header Information:\n");
-    printf("ELF Magic: 0x%016llx 0x%016llx\n", *(uint64_t *) hdr->e_ident, *(uint64_t *) (hdr->e_ident + 8));
+    printf("ELF Magic: 0x%016llx 0x%016llx\n", (uint64_t) hdr->e_ident, (uint64_t) (hdr->e_ident + 8));
     printf("Program Header Offset: 0x0%llx\n", hdr->e_phoff);
     printf("Program Header Numbers: 0x%x\n", hdr->e_phnum);
     printf("Program Header Size: 0x%x\n", hdr->e_phentsize);
