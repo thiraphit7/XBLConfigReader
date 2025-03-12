@@ -2,6 +2,7 @@
 # See: https://github.com/actions/starter-workflows/blob/main/ci/cmake-single-platform.yml
 name: Build XC Reader for multi platforms.
 
+
 on:
   push:
     branches: [ "main" ]
